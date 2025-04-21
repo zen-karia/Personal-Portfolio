@@ -1,5 +1,10 @@
 import './App.css'
+import Navbar from './components/Navbar.jsx'
 
 export default function App() {
-  return <main></main>;
+  return (
+    <main className="font-body ">
+      <Navbar />
+    </main>
+  );
 }
