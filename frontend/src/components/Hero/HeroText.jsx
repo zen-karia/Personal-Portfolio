@@ -39,25 +39,35 @@ export default function HeroText() {
     useEffect(() => {
         if (!isTypingComplete) return; // Wait until intro and name are typed
 
-        const typeText = (text, callback) => {
-            const speed = 100; // Adjusted speed for slower typing
+        const typeAndEraseText = (text, callback) => {
+            const typingSpeed = 100; // Speed for typing
+            const erasingSpeed = 50; // Speed for erasing
             let i = 0;
 
             function type() {
                 if (i < text.length) {
-                    setCurrentText(text.substring(0, i + 1)); // Update the text being typed
+                    setCurrentText(text.substring(0, i + 1)); // Add one character at a time
                     i++;
-                    setTimeout(type, speed);
+                    setTimeout(type, typingSpeed);
+                } else {
+                    setTimeout(erase, 1000); // Pause before erasing
+                }
+            }
+
+            function erase() {
+                if (i > 0) {
+                    setCurrentText(text.substring(0, i - 1)); // Remove one character at a time
+                    i--;
+                    setTimeout(erase, erasingSpeed);
                 } else if (callback) {
-                    setTimeout(callback, 1000); // Pause before starting the next item
+                    callback(); // Move to the next item
                 }
             }
 
             type();
         };
 
-        typeText(typeItems[currentIndex], () => {
-            setCurrentText(""); // Clear the text before typing the next item
+        typeAndEraseText(typeItems[currentIndex], () => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % typeItems.length); // Move to the next item (loop back to the start)
         });
     }, [currentIndex, isTypingComplete]); // Trigger re-render when currentIndex changes and typing is complete
@@ -66,11 +76,13 @@ export default function HeroText() {
         <div className="flex flex-col gap-4 h-full justify-center md:text-left sm:text-center">
             <h2 id="typewriter-text" className="lg:text-2xl sm:text-xl text-cyan">
                 {intro}
+                
             </h2>
             <h1 className="md:text-[2.8rem] lg:text-6xl sm:text-4xl font-bold font-special text-orange">
                 {name}
+                
             </h1>
-            <p className="text-lg mt-4 text-white">
+            <p className="text-2xl mt-4 text-white">
                 {currentText}
             </p>
         </div>
