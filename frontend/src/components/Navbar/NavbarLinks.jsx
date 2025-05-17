@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Links = [
-    { link: "About", section: "about" },
+    { link: "About Me", section: "about" },
     { link: "Skills", section: "skills" },
     { link: "Projects", section: "projects" },
     { link: "Experience", section: "experience" },
