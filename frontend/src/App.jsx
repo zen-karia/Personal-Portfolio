@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar.jsx'
 import Hero from './components/Hero/HeroMain.jsx'
 import HeroGradient from './components/Hero/HeroGradient.jsx';
 import { AboutMeMain } from './components/AboutMe/AboutMeMain.jsx';
+import { HelperSection } from './components/HelperSection.jsx';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Hero />
       <HeroGradient />
       <AboutMeMain />
+      <HelperSection />
     </main>
   );
 }

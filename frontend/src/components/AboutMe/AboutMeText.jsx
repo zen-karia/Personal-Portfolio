@@ -15,7 +15,9 @@ export const AboutMeText = () => {
             deploying code that never breaks (one day... maybe). Let's build something awesome 
             — preferably after coffee 😁
         </p>
-        <button className='border border-orange rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center text-white'>My Projects</button>
+        <div>
+            <button className='border border-orange rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center text-white'>Click here to explore some cool stuff that I've made!!! 🚀</button>
+        </div>
     </div>
   )
 }
