@@ -6,13 +6,13 @@ export default function HeroText() {
     const [name, setName] = useState("");
     const [currentText, setCurrentText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [isTypingComplete, setIsTypingComplete] = useState(false); // Track when intro and name are done
+    const [isTypingComplete, setIsTypingComplete] = useState(false); 
 
     const typeItems = ["A SOFTWARE ENGINEER...", "A FULL STACK DEVELOPER...", "AN AI ENTHUSIAST...", "AN ADRENALINE JUNKIE..."];
 
     useEffect(() => {
         const typeText = (text, setText, callback) => {
-            const speed = 100; // Adjusted speed for slower typing
+            const speed = 100; 
             let i = 0;
 
             function type() {
@@ -28,39 +28,38 @@ export default function HeroText() {
             type();
         };
 
-        // First type "Hi, I am", then "Zenil Karia", then start the infinite loop
+       
         typeText("HI, I AM", setIntro, () => {
             typeText("ZENIL KARIA", setName, () => {
-                setIsTypingComplete(true); // Mark intro and name typing as complete
+                setIsTypingComplete(true); 
             });
         });
     }, []);
 
     useEffect(() => {
-        if (!isTypingComplete) return; // Wait until intro and name are typed
-
+        if (!isTypingComplete) return; 
         const typeAndEraseText = (text, callback) => {
-            const typingSpeed = 100; // Speed for typing
-            const erasingSpeed = 50; // Speed for erasing
+            const typingSpeed = 100; 
+            const erasingSpeed = 50; 
             let i = 0;
 
             function type() {
                 if (i < text.length) {
-                    setCurrentText(text.substring(0, i + 1)); // Add one character at a time
+                    setCurrentText(text.substring(0, i + 1)); 
                     i++;
                     setTimeout(type, typingSpeed);
                 } else {
-                    setTimeout(erase, 1000); // Pause before erasing
+                    setTimeout(erase, 1000); 
                 }
             }
 
             function erase() {
                 if (i > 0) {
-                    setCurrentText(text.substring(0, i - 1)); // Remove one character at a time
+                    setCurrentText(text.substring(0, i - 1)); 
                     i--;
                     setTimeout(erase, erasingSpeed);
                 } else if (callback) {
-                    callback(); // Move to the next item
+                    callback(); 
                 }
             }
 
@@ -68,10 +67,9 @@ export default function HeroText() {
         };
 
         typeAndEraseText(typeItems[currentIndex], () => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % typeItems.length); // Move to the next item (loop back to the start)
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % typeItems.length); 
         });
-    }, [currentIndex, isTypingComplete]); // Trigger re-render when currentIndex changes and typing is complete
-
+    }, [currentIndex, isTypingComplete]); 
     return (
         <div className="flex flex-col gap-4 h-full justify-center md:text-left sm:text-center">
             <h2 id="typewriter-text" className="lg:text-2xl sm:text-xl text-cyan">
@@ -83,7 +81,8 @@ export default function HeroText() {
                 
             </h1>
             <p className="text-2xl mt-4 text-white">
-                {currentText}
+                <span>{currentText}</span>
+                <span className="blinking-cursor text-darkBrown">|</span>
             </p>
         </div>
     );
