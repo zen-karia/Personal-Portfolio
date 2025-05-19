@@ -2,9 +2,9 @@ import React from 'react'
 
 const Links = [
     { link: "About Me", section: "about" },
+    { link: "Experience", section: "experience" },
     { link: "Skills", section: "skills" },
     { link: "Projects", section: "projects" },
-    { link: "Experience", section: "experience" },
     { link: "Contact", section: "contact" },
 ];
 

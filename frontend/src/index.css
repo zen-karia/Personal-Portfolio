@@ -36,3 +36,18 @@ body {
     height: 1em;
     animation: blink 0.7s steps(2, start) infinite;
 }
+
+@layer utilities {
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-175%);
+      }
+    } 
+
+    .animate-scroll {
+        animation: scroll 10s linear infinite;
+    }
+} 
