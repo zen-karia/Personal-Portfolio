@@ -82,7 +82,7 @@ export default function HeroText() {
             </h1>
             <p className="text-2xl mt-4 text-white">
                 <span>{currentText}</span>
-                <span className="blinking-cursor text-darkBrown">|</span>
+                <span className="blinking-cursor"></span>
             </p>
         </div>
     );

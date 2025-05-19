@@ -31,7 +31,16 @@ module.exports = {
         cyanshadow: '0px 0px 20px 0px rgba(94, 206, 220, 0.5)',
         cyanMediumShadow: '10px 10px 200px 150px rgba(94, 206, 220, 0.5)',
         orangeMediumShadow: '10px 10px 200px 150px rgba(240, 169, 79, 0.5)',
-      }
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 10s linear infinite', // Adjust duration as needed
+      },
     },
     fontFamily: {
       body:['Josefin Sans'],
