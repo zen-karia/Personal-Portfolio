@@ -11,7 +11,7 @@ export const SingleProject = ({ project }) => {
         ></div>
 
         {/* Hover Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-70 rounded-lg scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-center flex flex-col items-center justify-center">
+        <div className="absolute inset-0 bg-black bg-opacity-90 rounded-lg scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-center flex flex-col items-center justify-center">
           <div className="text-white text-md font-bold px-4 text-center">
             {project.description}
           </div>
