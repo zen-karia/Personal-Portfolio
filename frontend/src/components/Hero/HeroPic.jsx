@@ -7,8 +7,8 @@ export default function HeroPic() {
         setIsOpen(true);
     }, []);
     return (
-        <div className='h-full flex items-center justify-center'>
-            <img src="../../images/ZenilKaria.jpg" alt="Zenil Karia" className={`max-h-[350px] w-auto mt-5 transition-all duration-700 ${ isOpen ? 'scale-100' : 'scale-y-0'}`} />
+        <div className='h-full flex items-center justify-center mr-5'>
+            <img src="../../images/ZenilKaria.jpg" alt="Zenil Karia" className={`max-h-[350px] w-auto mt-5 transition-all duration-700 rounded-full ${ isOpen ? 'scale-100' : 'scale-y-0'}`} />
         </div>
     )
 }

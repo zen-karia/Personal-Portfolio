@@ -3,7 +3,9 @@ import React from 'react'
 export const AboutMeText = () => {
   return (
     <div className='flex flex-col items-center'>
-        <h2 className='text-6xl text-cyan mb-10 ml-[120px]'>About Me</h2>
+        <h2 className='text-6xl text-cyan gap-3 flex items-center mb-10 ml-[120px]'>
+          About Me
+        </h2>
         <p className='text-white text-2xl ml-[100px] justify-items-center'>
             A CS student @ UWaterloo who loves clean code, messy bugs, 
             and the dopamine rush of fixing them at 3 a.m. By day, I’m a Software Developer 
