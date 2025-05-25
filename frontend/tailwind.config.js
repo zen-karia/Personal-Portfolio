@@ -42,6 +42,7 @@ module.exports = {
       animation: {
         scroll: 'scroll 10s linear infinite', // Adjust duration as needed
       },
+      backgroundOpacity: ['responsive', 'hover', 'focus'],
     },
     fontFamily: {
       body:['Josefin Sans'],

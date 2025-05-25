@@ -8,7 +8,7 @@ export const ExperienceMain = () => {
     <div id="experience" className='max-w-[1200px] mx-auto px-4'>
         <ExperienceText />
         <ExperienceTop />
-        <div className='w-full h-[1px] mt-4 bg-lightBrown lg:block sm:hidden'></div>
+        <div className='w-full h-[5px] mt-4 bg-lightGrey lg:block sm:hidden'></div>
         <AllExperience />
     </div>
   )
