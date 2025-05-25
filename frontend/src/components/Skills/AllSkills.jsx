@@ -21,95 +21,124 @@ import { SiGnubash } from "react-icons/si";
 import { SingleSkill } from './SingleSkill';
 
 const AllSkillsData = [
-    {
-        skill: 'HTML5',
-        icon: SiHtml5,
-    },
-    {
-        skill: 'CSS3',
-        icon: DiCss3,
-    },
-    {
-        skill: 'JavaScript',
-        icon: IoLogoJavascript,
-    },
-    {
-        skill: 'Python',
-        icon: SiPython,
-    },
-    {
-        skill: 'Go',
-        icon: FaGolang,
-    },
-    {
-        skill: 'YAML',
-        icon: SiYaml,
-    },
-    {
-        skill: 'MySQL',
-        icon: GrMysql,
-    },
-    {
-        skill: 'ReactJS',
-        icon: FaReact,
-    },
-    {
-        skill: 'NodeJS/ExpressJS',
-        icon: FaNodeJs,
-    },
-    {
-        skill: 'Django',
-        icon: SiDjango,
-    },
-    {
-        skill: 'Bootstrap',
-        icon: FaBootstrap,
-    },
-    {
-        skill: 'TailwindCSS',
-        icon: SiTailwindcss,
-    },
-    {
-        skill: 'OpenCV',
-        icon: SiOpencv,
-    },
-    {
-        skill: 'Numpy',
-        icon: SiNumpy,
-    },
-    {
-        skill: 'Google Cloud Platform',
-        icon: DiGoogleCloudPlatform,
-    },
-    {
-        skill: 'Docker',
-        icon: GrDocker,
-    },
-    {
-        skill: 'Git/GitHub',
-        icon: IoLogoGithub,
-    },
-    {
-        skill: 'Linux',
-        icon: DiLinux,
-    },
-    {
-        skill: 'Bash',
-        icon: SiGnubash,
-    },
+  {
+    skill: 'HTML5',
+    icon: SiHtml5,
+    colors: { border: 'border-orange-500', text: 'text-orange-600' },
+  },
+  {
+    skill: 'CSS3',
+    icon: DiCss3,
+    colors: { border: 'border-blue-500', text: 'text-blue-600' },
+  },
+  {
+    skill: 'JavaScript',
+    icon: IoLogoJavascript,
+    colors: { border: 'border-yellow-300', text: 'text-yellow-500' },
+  },
+  {
+    skill: 'Python',
+    icon: SiPython,
+    colors: { border: 'border-yellow-400', text: 'text-blue-500' },
+  },
+  {
+    skill: 'Go',
+    icon: FaGolang,
+    colors: { border: 'border-cyan-400', text: 'text-cyan-500' },
+  },
+  {
+    skill: 'YAML',
+    icon: SiYaml,
+    colors: { border: 'border-gray-400', text: 'text-gray-500' },
+  },
+  {
+    skill: 'MySQL',
+    icon: GrMysql,
+    colors: { border: 'border-blue-400', text: 'text-blue-500' },
+  },
+  {
+    skill: 'ReactJS',
+    icon: FaReact,
+    colors: { border: 'border-cyan-400', text: 'text-cyan-500' },
+  },
+  {
+    skill: 'NodeJS/ExpressJS',
+    icon: FaNodeJs,
+    colors: { border: 'border-green-500', text: 'text-green-600' },
+  },
+  {
+    skill: 'Django',
+    icon: SiDjango,
+    colors: { border: 'border-green-600', text: 'text-green-700' },
+  },
+  {
+    skill: 'Bootstrap',
+    icon: FaBootstrap,
+    colors: { border: 'border-purple-500', text: 'text-purple-600' },
+  },
+  {
+    skill: 'TailwindCSS',
+    icon: SiTailwindcss,
+    colors: { border: 'border-blue-400', text: 'text-blue-500' },
+  },
+  {
+    skill: 'OpenCV',
+    icon: SiOpencv,
+    colors: { border: 'border-green-400', text: 'text-green-500' },
+  },
+  {
+    skill: 'Numpy',
+    icon: SiNumpy,
+    colors: { border: 'border-blue-400', text: 'text-blue-500' },
+  },
+  {
+    skill: 'Google Cloud Platform',
+    icon: DiGoogleCloudPlatform,
+    colors: { border: 'border-blue-500', text: 'text-blue-600' },
+  },
+  {
+    skill: 'Docker',
+    icon: GrDocker,
+    colors: { border: 'border-blue-400', text: 'text-blue-500' },
+  },
+  {
+    skill: 'Git/GitHub',
+    icon: IoLogoGithub,
+    colors: { border: 'border-gray-500', text: 'text-gray-600' },
+  },
+  {
+    skill: 'Linux',
+    icon: DiLinux,
+    colors: { border: 'border-black', text: 'text-gray-800' },
+  },
+  {
+    skill: 'Bash',
+    icon: SiGnubash,
+    colors: { border: 'border-green-500', text: 'text-green-600' },
+  },
 ]
 export const AllSkills = () => {
   return (
     <div className="relative overflow-hidden w-full h-[300px]">
-        <div className='flex items-center justify-center relative gap-10 max-w-[1200px] mx-auto mt-10 animate-scroll'>
-            {AllSkillsData.map((item, index) => (
-                <SingleSkill key={index} text={item.skill} imgSvg={<item.icon />} />
-            ))}
-            {/* Duplicate the skills for seamless scrolling */}
-            {AllSkillsData.map((item, index) => (
-                <SingleSkill key={`duplicate-${index}`} text={item.skill} imgSvg={<item.icon />} />
-            ))}
-        </div>
+      <div className="flex items-center justify-center relative gap-10 max-w-[1200px] mx-auto mt-10 animate-scroll">
+        {AllSkillsData.map((item, index) => (
+          <SingleSkill
+            key={index}
+            text={item.skill}
+            imgSvg={<item.icon />}
+            colors={item.colors} // Pass the colors property
+          />
+        ))}
+        {/* Duplicate the skills for seamless scrolling */}
+        {AllSkillsData.map((item, index) => (
+          <SingleSkill
+            key={`duplicate-${index}`}
+            text={item.skill}
+            imgSvg={<item.icon />}
+            colors={item.colors} // Pass the colors property
+          />
+        ))}
+      </div>
     </div>
   );
-}
+};
