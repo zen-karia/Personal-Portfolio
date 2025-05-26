@@ -7,6 +7,7 @@ import { SkillsMain } from './components/Skills/SkillsMain.jsx';
 import { ExperienceMain } from './components/Experience/ExperienceMain.jsx';
 import { ProjectsMain } from './components/Projects/ProjectsMain.jsx';
 import { ContactMeMain } from './components/ContactMe/ContactMeMain.jsx';
+import { FooterMain } from './components/Footer/FooterMain.jsx';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <SkillsMain />
       <ProjectsMain />
       <ContactMeMain />
+      <FooterMain />
     </main>
   );
 }
