@@ -6,7 +6,6 @@ const Links = [
     { link: "Experience", section: "experience" },
     { link: "Skills", section: "skills" },
     { link: "Projects", section: "projects" },
-    { link: "Contact Me", section: "contact" },
 ];
 
 export default function NavbarLinks () {

@@ -6,7 +6,7 @@ export const SingleProject = ({ project }) => {
   return (
     <motion.div variants={fadeIn('up', 0.3)} initial='hidden' whileInView='show' viewport={{ once: true, amount: 0}} className="relative flex flex-col items-center text-center p-4 rounded-lg group">
       {/* Project Image */}
-      <div className="relative h-[225px] w-[500px]">
+      <div className="relative md:h-[225px] md:w-[500px] sm:w-[475px] sm:h-[225px]">
         <div
           className="h-full w-full bg-cover bg-center rounded-lg shadow-lg"
           style={{ backgroundImage: `url(${project.image})` }}
