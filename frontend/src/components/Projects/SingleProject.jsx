@@ -1,8 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../FramerMotion/variants';
 
 export const SingleProject = ({ project }) => {
   return (
-    <div className="relative flex flex-col items-center text-center p-4 rounded-lg group">
+    <motion.div variants={fadeIn('up', 0.3)} initial='hidden' whileInView='show' viewport={{ once: true, amount: 0}} className="relative flex flex-col items-center text-center p-4 rounded-lg group">
       {/* Project Image */}
       <div className="relative h-[225px] w-[500px]">
         <div
@@ -21,6 +23,6 @@ export const SingleProject = ({ project }) => {
 
       {/* Project Name */}
       <h2 className="mt-4 text-2xl font-bold text-cyan">{project.name}</h2>
-    </div>
+    </motion.div>
   );
 };

@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 export const AboutMeText = () => {
   return (
     <div className='flex flex-col items-center'>
-        <h2 className='text-6xl text-cyan gap-3 flex items-center mb-10 ml-[120px]'>
+        <h2 className='text-6xl text-cyan gap-3 flex items-center mb-10'>
           About Me
         </h2>
-        <p className='text-white text-2xl ml-[100px] justify-items-center'>
+        <p className='text-white text-2xl'>
             A CS student @ UWaterloo who loves clean code, messy bugs, 
             and the dopamine rush of fixing them at 3 a.m. By day, I’m a Software Developer 
             Intern at eSentire. By night, I’m either training AI models, dancing, performing 
@@ -18,7 +19,7 @@ export const AboutMeText = () => {
             — preferably after coffee!! 😁
         </p>
         <div>
-            <button className='border border-orange rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center text-white ml-[100px]'>Click here to explore some cool stuff that I've made!!! 🚀</button>
+            <button className='border border-orange rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center text-white'><Link to="projects" smooth={true} spy={true} duration={500} offset={-160}>Click here to explore some cool stuff that I've made!!! 🚀</Link></button>
         </div>
     </div>
   )

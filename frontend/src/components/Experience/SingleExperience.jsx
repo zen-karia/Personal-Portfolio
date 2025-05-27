@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../FramerMotion/variants'
 
 export const SingleExperience = ({ experience }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
+    <motion.div variants={fadeIn("right", 0)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0 }}>
     <div
       className="relative md:h-[350px] md:w-[240px] sm:h-auto sm:w-auto border-2 border-orange border-dashed rounded-2xl mt-12 p-4 overflow-hidden"
       onMouseEnter={() => setIsHovered(true)} // Trigger hover effect
@@ -42,5 +45,6 @@ export const SingleExperience = ({ experience }) => {
         )}
       </div>
     </div>
+    </motion.div>
   );
 };

@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
 import { SingleExperience } from './SingleExperience';
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../FramerMotion/variants'
 
 const AllExperienceData = [
     {
@@ -27,7 +29,8 @@ export const AllExperience = () => {
             return (
                 <>
                     <SingleExperience key={index} experience={experience} />
-                    {index < 1? (<FaArrowRight className='text-6xl text-orange lg:block sm:hidden'/>) : ("")}
+                    {index < 1? (
+                        <motion.div variants={fadeIn("right", 0)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0}}><FaArrowRight className='text-6xl text-orange lg:block sm:hidden'/></motion.div>) : ("")}
                 </>
             );
         })}

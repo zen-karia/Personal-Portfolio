@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Confetti from 'react-confetti';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../FramerMotion/variants';
 
 export const ContactForm = () => {
     const form = useRef();
@@ -29,7 +31,7 @@ export const ContactForm = () => {
     };
     
     return (
-        <div className='relative'>
+        <motion.div variants={fadeIn('up', 0.3)} initial='hidden' whileInView='show' viewport={{ once: true, amount: 0}} className='relative'>
             {isMessageSent && <Confetti width={window.innerWidth} height={window.innerHeight} />}
             <form className='flex flex-col gap-4' ref={form} onSubmit={sendEmail}>
                 <input name="from_name" type="text" placeholder='Your Name' required className='h-12 text-white rounded-lg bg-lightBrown px-2'/>
@@ -42,6 +44,6 @@ export const ContactForm = () => {
                     <h2 className="text-4xl font-bold text-white animate-bounce">Message Sent 🎉</h2>
                 </div>
       )}
-        </div>
+        </motion.div>
     )
 }

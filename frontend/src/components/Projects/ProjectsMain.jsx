@@ -2,6 +2,8 @@ import React from 'react'
 import { ProjectsText } from './ProjectsText'
 import { SingleProject } from './SingleProject'
 import { FaGithub } from "react-icons/fa";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../FramerMotion/variants';
 
 const Projects = () => [
   {
@@ -67,8 +69,10 @@ const Projects = () => [
 ]
 export const ProjectsMain = () => {
   return (
-    <div className='relative max-w-[1200px] mx-auto px-4'>
+    <div id="projects" className='relative max-w-[1200px] mx-auto px-4'>
+        <motion.div variants={fadeIn('up', 0.3)} initial='hidden' whileInView='show' viewport={{ once: true, amount: 0}} className='text-center mt-20'>
         <ProjectsText />
+        </motion.div>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-20 gap-x-40 mt-8'>
             {Projects().map((project, index) => {
                 return (
