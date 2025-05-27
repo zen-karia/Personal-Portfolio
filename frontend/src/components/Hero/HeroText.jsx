@@ -8,7 +8,7 @@ export default function HeroText() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isTypingComplete, setIsTypingComplete] = useState(false); 
 
-    const typeItems = ["A SOFTWARE ENGINEER...", "A FULL STACK DEVELOPER...", "AN AI ENTHUSIAST...", "AN ADRENALINE JUNKIE..."];
+    const typeItems = ["A SOFTWARE ENGINEER...", "A FULL STACK DEVELOPER...", "AN AI ENTHUSIAST...", "AN AVID TRAVELLER..."];
 
     useEffect(() => {
         const typeText = (text, setText, callback) => {
