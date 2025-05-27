@@ -6,9 +6,9 @@ export const SingleExperience = ({ experience }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <motion.div variants={fadeIn("right", 0)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0 }}>
+    <motion.div variants={fadeIn("right", 0)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0 }} className=''>
     <div
-      className="relative md:h-[350px] md:w-[240px] sm:h-auto sm:w-auto border-2 border-orange border-dashed rounded-2xl mt-12 p-4 overflow-hidden"
+      className="relative md:h-[350px] md:w-[240px] sm:h-[350px] sm:w-[240px] border-2 border-orange border-dashed rounded-2xl mt-12 p-4 overflow-hidden"
       onMouseEnter={() => setIsHovered(true)} // Trigger hover effect
       onMouseLeave={() => setIsHovered(false)} // Remove hover effect
     >

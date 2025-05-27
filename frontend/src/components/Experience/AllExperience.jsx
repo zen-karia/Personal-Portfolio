@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 import { SingleExperience } from './SingleExperience';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../FramerMotion/variants'
@@ -24,13 +25,35 @@ const AllExperienceData = [
 
 export const AllExperience = () => {
   return (
-    <div className='flex md:flex-row sm:flex-col items-center justify-center gap-40'>
+    <div className='flex md:flex-row sm:flex-col items-center justify-center relative'>
         {AllExperienceData.map((experience, index) => {
             return (
                 <>
                     <SingleExperience key={index} experience={experience} />
                     {index < 1? (
-                        <motion.div variants={fadeIn("right", 0)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0}}><FaArrowRight className='text-6xl text-orange lg:block sm:hidden'/></motion.div>) : ("")}
+                        <>
+                        {/* Right Arrow for large screens */}
+                        <motion.div
+                          variants={fadeIn("right", 0)}
+                          initial="hidden"
+                          whileInView="show"
+                          viewport={{ once: true, amount: 0 }}
+                          className='flex-row items-center justify-center'
+                        >
+                          <FaArrowRight className='text-6xl text-orange md:block sm:hidden ml-[100px] mr-[100px]' />
+                        </motion.div>
+        
+                        {/* Down Arrow for small screens */}
+                        <motion.div
+                          variants={fadeIn("down", 0)}
+                          initial="hidden"
+                          whileInView="show"
+                          viewport={{ once: true, amount: 0 }}
+                          className='flex items-center justify-center'
+                        >
+                          <FaArrowDown className='text-6xl text-orange md:hidden sm:block mt-[100px] mb-[100px]' />
+                        </motion.div>
+                      </>) : ("")}
                 </>
             );
         })}
