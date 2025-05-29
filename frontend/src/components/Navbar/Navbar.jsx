@@ -14,7 +14,7 @@ function Navbar () {
     <nav className="max-w-[1300px] mx-auto px-2 w-full fixed left-[50%] -translate-x-[50%] z-20 flex gap-4 mt-2">
         <div className="flex justify-between w-full max-w-[1200px] mx-auto bg-black items-center p-4 rounded-r-full rounded-l-full border-[0.5px] border-orange">
             <NavbarLogo />
-            <div className={` ${menuOpen? 'sm:block': 'sm:hidden' } lg:block `}><NavbarLinks /></div>
+            <div className={` ${menuOpen? 'sm:block': 'sm:hidden' } lg:block `}><NavbarLinks onLinkClick={() => setMenuOpen(false)} /></div>
             <NavbarBtn />
         </div>
         <div className="flex lg:hidden sm:block p-4 bg-black items-center justify-center rounded-full border-[0.5px] border-orange">
