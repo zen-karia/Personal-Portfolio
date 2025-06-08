@@ -18,6 +18,7 @@ import { GrDocker } from "react-icons/gr";
 import { IoLogoGithub } from "react-icons/io";
 import { DiLinux } from "react-icons/di";
 import { SiGnubash } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../FramerMotion/variants';
 import { SingleSkill } from './SingleSkill';
