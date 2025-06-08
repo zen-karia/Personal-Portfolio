@@ -18,6 +18,7 @@ import { GrDocker } from "react-icons/gr";
 import { IoLogoGithub } from "react-icons/io";
 import { DiLinux } from "react-icons/di";
 import { SiGnubash } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 import { SingleSkill } from './SingleSkill';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../FramerMotion/variants';
@@ -82,6 +83,11 @@ const AllSkillsData = [
     skill: 'TailwindCSS',
     icon: SiTailwindcss,
     colors: { border: 'border-blue-400', text: 'text-blue-500' },
+  },
+  {
+    skill: 'Amazon Web Services',
+    icon: FaAws,
+    colors: { border: 'border-yellow-500', text: 'text-yellow-600' }
   },
   {
     skill: 'OpenCV',

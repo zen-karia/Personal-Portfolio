@@ -72,6 +72,10 @@ const AllSkillsData = [
         icon: SiTailwindcss,
     },
     {
+        skill: 'Amazon Web Services',
+        icon: FaAws,
+    },
+    {
         skill: 'OpenCV',
         icon: SiOpencv,
     },
