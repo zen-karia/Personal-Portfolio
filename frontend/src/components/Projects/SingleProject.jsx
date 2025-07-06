@@ -11,7 +11,6 @@ export const SingleProject = ({ project }) => {
           className="h-full w-full bg-cover bg-center rounded-lg shadow-lg"
           style={{ backgroundImage: `url(${project.image})` }}
         ></div>
-
         <div className="absolute inset-0 bg-black bg-opacity-90 rounded-lg scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-center flex flex-col items-center justify-center">
           <div className="text-white text-base md:text-md font-bold px-4 text-center">
             {project.description}
@@ -34,7 +33,11 @@ export const SingleProject = ({ project }) => {
           </div>
         </div>
       </div>
-
+      {project.techstack && (
+          <div className="bg-gradient-to-r from-cyan to-orange text-lg rounded-lg md:w-[500px] px-4 py-2 font-bold inline-block mt-2">
+            {project.techstack.join(' • ')}
+          </div>
+        )}
       <h2 className="mt-4 text-2xl font-bold text-cyan">{project.name}</h2>
     </motion.div>
   );
