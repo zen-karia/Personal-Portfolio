@@ -34,7 +34,7 @@ export const SingleProject = ({ project }) => {
         </div>
       </div>
       {project.techstack && (
-          <div className="bg-gradient-to-r from-cyan to-orange text-lg rounded-lg md:w-[500px] px-4 py-2 font-bold inline-block mt-2">
+          <div className="bg-gradient-to-r from-cyan to-orange text-lg rounded-lg md:w-[500px] sm:w-[450px] px-4 py-2 font-bold inline-block mt-2">
             {project.techstack.join(' • ')}
           </div>
         )}
