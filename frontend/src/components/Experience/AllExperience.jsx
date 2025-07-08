@@ -10,7 +10,7 @@ const AllExperienceData = [
         job: 'Software Developer Intern',
         company: 'eSentire',
         date: 'May 2025 - Present',
-        responsibilities: ["Detection and Incident Response (IR) Team"],
+        responsibilities: ["Building handlers, pipelines, and services for a Generic Response Action Framework using Go templates and YAML"],
         bgImage: "../../images/esentire_icon.png"
     },
     {
