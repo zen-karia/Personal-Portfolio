@@ -21,6 +21,14 @@ const Projects = () => [
     techstack: ['React.js', 'Node.js', 'Express.js', 'gTTS', 'GCP', 'OpenAI API']
   },
   {
+    name: 'Structify',
+    image: '/images/Structify.jpeg',
+    link: 'https://github.com/zen-karia/Structify',
+    demoLink: 'https://youtu.be/xLowKFJEAzc',
+    description: "🧠 Structify is an AI-powered Chrome extension that 📂 auto-organizes your tabs into smart categories like 💼 Work, 🎬 Entertainment, and 📱 Social. 🚀 Jump between tabs instantly and stay clutter-free with a sleek, intuitive UI! ✨",
+    techstack: ['React.js', 'JavaScript', 'OpenAI API', 'Chrome Extension API']
+  },
+  {
     name: 'RecyClean',
     image: '/images/RecyClean.jpg',
     link: 'https://github.com/zen-karia/RecyClean',
