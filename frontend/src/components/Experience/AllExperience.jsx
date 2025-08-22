@@ -9,8 +9,8 @@ const AllExperienceData = [
     {
         job: 'Software Developer Intern',
         company: 'eSentire',
-        date: 'May 2025 - Present',
-        responsibilities: ["Developed threat detection pipelines using Go templates, YAML, and RESTful APIs", "Reduced data redundancy and simplified core architecture by creating a Generic Pipeline for all actions", "Streamlined pipeline workflows, shipped to production with AWS and optimized storage/data extraction using SQL"],
+        date: 'May 2025 - Aug 2025',
+        responsibilities: ["Developed threat detection pipelines using Go templates, YAML, and RESTful APIs", "Reduced data redundancy and simplified core architecture by creating a Generic Pipeline for all response actions", "Streamlined CI/CD pipeline workflows, shipped to production with AWS and optimized storage/data extraction using SQL"],
         bgImage: "../../images/esentire_icon.png"
     },
     {
