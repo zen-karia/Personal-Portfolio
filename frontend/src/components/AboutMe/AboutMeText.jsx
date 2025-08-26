@@ -8,7 +8,7 @@ export const AboutMeText = () => {
           About Me
         </h2>
         <p className='text-white text-2xl'>
-           I am a CS student at the University of Waterloo with a strong foundation 
+           I am a CS student at the University of Waterloo with a keen interest 
            in software development, AI, and machine learning. My experience includes 
            shipping production-ready pipelines at eSentire, conducting research on AI 
            models for mental health prediction, and building impactful projects such as 
