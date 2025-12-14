@@ -19,6 +19,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { DiLinux } from "react-icons/di";
 import { SiGnubash } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
+import { TbBrandCpp } from 'react-icons/tb';
 import { SingleSkill } from './SingleSkill';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../FramerMotion/variants';
@@ -42,6 +43,11 @@ const AllSkillsData = [
   {
     skill: 'Python',
     icon: SiPython,
+    colors: { border: 'border-yellow-400', text: 'text-blue-500' },
+  },
+  {
+    skill: 'C++',
+    icon: TbBrandCpp,
     colors: { border: 'border-yellow-400', text: 'text-blue-500' },
   },
   {

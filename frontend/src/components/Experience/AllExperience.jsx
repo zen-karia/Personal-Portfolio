@@ -10,7 +10,7 @@ const AllExperienceData = [
         job: 'Software Developer Intern',
         company: 'eSentire',
         date: 'May 2025 - Aug 2025',
-        responsibilities: ["Migrated pipelines from Python to a low-code platform using Go templates, YAML, and RESTful APIs", "Streamlined CI/CD pipeline workflow by creating a generic pipeline for all response actions to reduce code duplication by 40% and increase component reusability", "Shipped to production with AWS and optimized data storage and retrieval by 30% in Snowflake using SQL"],
+        responsibilities: ["Refactored Python code for 2 pipelines and 7+ threat services using Go templates, YAML, and REST APIs", "Reduced 70% code duplication and increased 50% component re-usability via CI/CD optimization", "Lowered average SQL query runtime in Snowflake from 10s to 7s by optimizing data storage and retrieval", "Accelerated pipeline component deployments via AWS, shipping each to production within 48 hours"],
         bgImage: "../../images/esentire_icon.png"
     },
     {

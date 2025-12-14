@@ -27,7 +27,7 @@ export const SingleExperience = ({ experience }) => {
           isHovered ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <ul className="list-disc mt-4 pl-4 text-black p-4 text-sm">
+        <ul className="list-disc mt-2 pl-4 text-black p-2 text-sm">
           {experience.responsibilities.map((responsibility, index) => (
             <li key={index}>{responsibility}</li>
           ))}
