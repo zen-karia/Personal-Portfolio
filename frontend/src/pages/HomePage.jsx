@@ -3,7 +3,6 @@ import About from '../components/About';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import FeaturedProjects from '../components/FeaturedProjects';
-import Signature from '../components/Signature';
 
 export default function HomePage() {
   return (
@@ -13,7 +12,6 @@ export default function HomePage() {
       <Experience />
       <Skills />
       <FeaturedProjects />
-      <Signature />
     </main>
   );
 }
