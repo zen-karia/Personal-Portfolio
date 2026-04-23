@@ -7,7 +7,7 @@ export default function Hero() {
       <img
         src="/images/ZenilKaria.jpg"
         alt="Zenil Karia"
-        className="w-28 h-28 rounded-full object-cover ring-1 ring-gray-200 dark:ring-gray-700"
+        className="w-40 h-40 rounded-full object-cover ring-1 ring-gray-200 dark:ring-gray-700"
       />
 
       <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mt-5">
