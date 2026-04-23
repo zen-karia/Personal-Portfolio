@@ -1,10 +1,9 @@
-import { FaPlane } from 'react-icons/fa';
 
 const experiences = [
   {
     company: 'TripToGo',
     companyUrl: 'https://www.triptogo.ca',
-    icon: FaPlane,
+    logo: '/images/triptogo.png',
     role: 'Software Developer Intern',
     date: 'May 2026 – Aug 2026',
     bullets: [
