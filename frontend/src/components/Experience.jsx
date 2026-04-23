@@ -1,4 +1,16 @@
+import { FaPlane } from 'react-icons/fa';
+
 const experiences = [
+  {
+    company: 'TripToGo',
+    companyUrl: 'https://www.triptogo.ca',
+    icon: FaPlane,
+    role: 'Software Developer Intern',
+    date: 'May 2026 – Aug 2026',
+    bullets: [
+      <>Incoming Summer 2026 - Orchestrating and testing cloud-based features for a travel planning platform using <b>Java/Kotlin</b>, <b>TypeScript</b>, and automated <b>CI/CD</b> pipelines</>
+    ],
+  },
   {
     company: 'eSentire',
     companyUrl: 'https://www.esentire.com',
@@ -6,10 +18,11 @@ const experiences = [
     role: 'Software Developer Intern',
     date: 'May 2025 – Aug 2025',
     bullets: [
-      'Refactored 2 production pipelines and 7+ threat services using Go templates, YAML, and REST APIs',
-      'Reduced code duplication by 70% and improved component re-usability via CI/CD optimization',
-      'Lowered average SQL query runtime in Snowflake from 10s to 7s by optimizing data storage and retrieval',
-      'Shipped pipeline components to production within 48 hours via AWS deployments',
+      <>Engineered the <b>Generic Response Action Pipeline</b> to automate threat responses across 7+ services (CrowdStrike, Microsoft), by refactoring <b>Python</b> code to a low-code platform using <b>Go</b> templates, <b>YAML</b>, & <b>REST APIs</b></>,
+      <>Reduced <b>70%</b> code duplication and increased <b>50%</b> re-usability by developing the <b>Generic Data Puller Pipeline</b> for services like Microsoft Sentinel and leveraged <b>Codex</b> for ensuring robust and scalable structure</>,
+      <>Accelerated <b>AWS</b> CI/CD deployments by <b>unit testing 20+</b> modular HTTP, Snowflake handlers with <b>Postman</b> collections for REST contracts and error paths, shipping each to production within <b>48 hours</b></>,
+      <>Improved visibility and reduced incident response time by building a <b>Slack notification handler</b> to proactively alert engineering teams of execution failures, replacing manual log checks in AWS</>,
+      <>Lowered average Snowflake <b>SQL</b> query runtime <b>from 10s to 7s</b> by utilizing store procedures to query and retrieve required data for downstream processes</>
     ],
   },
   {
@@ -34,11 +47,17 @@ export default function Experience() {
       <div className="space-y-8">
         {experiences.map((exp) => (
           <div key={exp.company} className="flex gap-4 pl-4 border-l-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600 transition-colors duration-200">
-            <img
-              src={exp.logo}
-              alt={exp.company}
-              className="w-7 h-7 rounded object-contain flex-shrink-0 mt-0.5 bg-gray-50 dark:bg-gray-800 p-0.5"
-            />
+            {exp.icon ? (
+              <div className="w-7 h-7 rounded flex-shrink-0 mt-0.5 bg-gray-50 dark:bg-gray-800 p-0.5 flex items-center justify-center text-gray-500 dark:text-gray-400">
+                <exp.icon size={16} />
+              </div>
+            ) : (
+              <img
+                src={exp.logo}
+                alt={exp.company}
+                className="w-7 h-7 rounded object-contain flex-shrink-0 mt-0.5 bg-gray-50 dark:bg-gray-800 p-0.5"
+              />
+            )}
             <div className="flex-1 min-w-0">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5 mb-3">
                 <div>
@@ -58,7 +77,7 @@ export default function Experience() {
                 {exp.bullets.map((b, i) => (
                   <li key={i} className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed flex gap-2">
                     <span className="text-gray-300 dark:text-gray-600 flex-shrink-0 select-none">–</span>
-                    {b}
+                    <span className="flex-1">{b}</span>
                   </li>
                 ))}
               </ul>
