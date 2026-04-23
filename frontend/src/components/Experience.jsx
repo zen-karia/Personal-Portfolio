@@ -14,7 +14,7 @@ const experiences = [
     company: 'eSentire',
     companyUrl: 'https://www.esentire.com',
     logo: '/images/esentire_icon.png',
-    role: 'Software Developer Intern | Co-op Term Evaluation: Outstanding',
+    role: 'Software Developer Intern | Co-op Evaluation: Outstanding',
     date: 'May 2025 – Aug 2025',
     bullets: [
       <>Engineered the <b>Generic Response Action Pipeline</b> to automate threat responses across 7+ services (CrowdStrike, Microsoft), by refactoring <b>Python</b> code to a low-code platform using <b>Go</b> templates, <b>YAML</b>, & <b>REST APIs</b></>,
