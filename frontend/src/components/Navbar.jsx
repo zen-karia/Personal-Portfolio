@@ -9,19 +9,16 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
-      <nav className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
-        <Link
-          to="/"
-          className="font-semibold text-gray-900 dark:text-gray-100 hover:opacity-70 transition-opacity text-sm"
-        >
-          Zenil Karia
-        </Link>
-
-        {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-7">
+      <nav className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-end relative">
+        {/* Desktop links - Centralized */}
+        <div className="hidden md:flex items-center gap-7 absolute left-1/2 -translate-x-1/2">
           <a href="/#about" className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">About</a>
           <a href="/#experience" className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">Experience</a>
           <Link to="/projects" className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">Projects</Link>
+        </div>
+
+        {/* Desktop: theme toggle */}
+        <div className="hidden md:block">
           <button
             onClick={toggle}
             aria-label="Toggle theme"
