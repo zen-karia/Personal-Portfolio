@@ -2,7 +2,7 @@
 const experiences = [
   {
     company: 'TripToGo',
-    companyUrl: 'https://www.triptogo.ca',
+    companyUrl: 'https://www.triptogo.com',
     logo: '/images/triptogo.png',
     role: 'Software Developer Intern',
     date: 'May 2026 – Aug 2026',
