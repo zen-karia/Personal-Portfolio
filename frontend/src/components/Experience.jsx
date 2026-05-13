@@ -7,7 +7,7 @@ const experiences = [
     role: 'Software Developer Intern',
     date: 'May 2026 – Aug 2026',
     bullets: [
-      <>Incoming Summer 2026 - Orchestrating and testing cloud-based features for a travel planning platform using <b>Java/Kotlin</b>, <b>TypeScript</b>, and automated <b>CI/CD</b> pipelines</>
+      <>Orchestrating backend microservices and <b>GraphQL</b> APIs for a travel planning platform on a <b>Kotlin/Spring Boot</b> stack, working with <b>Kafka</b> event streams, <b>JPA/Hibernate</b> persistence, <b>Flyway</b>-managed SQL schema migrations, and deploying to <b>AWS EKS</b> via automated CI/CD pipelines</>
     ],
   },
   {
@@ -17,11 +17,10 @@ const experiences = [
     role: 'Software Developer Intern | Co-op Evaluation: Outstanding',
     date: 'May 2025 – Aug 2025',
     bullets: [
-      <>Engineered the <b>Generic Response Action Pipeline</b> to automate threat responses across 7+ services (CrowdStrike, Microsoft), by refactoring <b>Python</b> code to a low-code platform using <b>Go</b> templates, <b>YAML</b>, & <b>REST APIs</b></>,
-      <>Reduced <b>70%</b> code duplication and increased <b>50%</b> re-usability by developing the <b>Generic Data Puller Pipeline</b> for services like Microsoft Sentinel and leveraged <b>Codex</b> for ensuring robust and scalable structure</>,
+      <>Refactored <b>Python</b> threat-response pipelines to a low-code generic platform with <b>Go</b> templates, <b>YAML</b>, & <b>REST APIs</b> across 7+ services (e.g. CrowdStrike), reducing code duplication by <b>70%</b> and increasing reusability by <b>50%</b></>,
       <>Accelerated <b>AWS</b> CI/CD deployments by <b>unit testing 20+</b> modular HTTP, Snowflake handlers with <b>Postman</b> collections for REST contracts and error paths, shipping each to production within <b>48 hours</b></>,
-      <>Improved visibility and reduced incident response time by building a <b>Slack notification handler</b> to proactively alert engineering teams of execution failures, replacing manual log checks in AWS</>,
-      <>Lowered average Snowflake <b>SQL</b> query runtime <b>from 10s to 7s</b> by utilizing store procedures to query and retrieve required data for downstream processes</>
+      <>Improved visibility and reduced incident response time by building a <b>Slack notification handler</b> to proactively alert engineering teams of execution failures, replacing manual log checks in <b>AWS</b></>,
+      <>Lowered average Snowflake <b>SQL</b> query runtime <b>from 10s to 7s</b> by utilizing stored procedures to query and retrieve required data for downstream processes</>
     ],
   },
   {
