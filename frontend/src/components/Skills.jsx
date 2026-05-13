@@ -1,8 +1,8 @@
-import { SiHtml5, SiPython, SiYaml, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiExpress, SiFlask, SiTensorflow, SiKeras, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiPostman } from 'react-icons/si';
-import { DiGoogleCloudPlatform } from 'react-icons/di';
+import { SiHtml5, SiPython, SiYaml, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiExpress, SiFlask, SiTensorflow, SiKeras, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiKotlin, SiRuby, SiSpringboot, SiGraphql, SiApachekafka } from 'react-icons/si';
+import { DiGoogleCloudPlatform, DiJava } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaGolang, FaNodeJs } from 'react-icons/fa6';
-import { FaReact, FaAws, FaGitAlt, FaCogs, FaMicrophone } from 'react-icons/fa';
+import { FaReact, FaAws, FaCogs, FaMicrophone } from 'react-icons/fa';
 import { TbBrandCpp, TbApi, TbBrandReactNative, TbSql } from 'react-icons/tb';
 import { GrMysql, GrDocker } from 'react-icons/gr';
 
@@ -12,10 +12,13 @@ const skillGroups = [
     skills: [
       { name: 'C/C++',      Icon: TbBrandCpp },
       { name: 'Python',     Icon: SiPython },
+      { name: 'Java',       Icon: DiJava },
+      { name: 'Kotlin',     Icon: SiKotlin },
       { name: 'JavaScript', Icon: IoLogoJavascript },
       { name: 'TypeScript', Icon: SiTypescript },
       { name: 'Go',         Icon: FaGolang },
       { name: 'SQL',        Icon: TbSql },
+      { name: 'Ruby',       Icon: SiRuby },
       { name: 'HTML/CSS',   Icon: SiHtml5 },
       { name: 'Bash',       Icon: SiGnubash },
     ],
@@ -23,6 +26,7 @@ const skillGroups = [
   {
     label: 'Frameworks',
     skills: [
+      { name: 'Spring Boot',  Icon: SiSpringboot },
       { name: 'Next.js',      Icon: SiNextdotjs },
       { name: 'React',        Icon: FaReact },
       { name: 'React Native', Icon: TbBrandReactNative },
@@ -30,6 +34,7 @@ const skillGroups = [
       { name: 'Express.js',   Icon: SiExpress },
       { name: 'Django',       Icon: SiDjango },
       { name: 'Flask',        Icon: SiFlask },
+      { name: 'GraphQL',      Icon: SiGraphql },
       { name: 'RESTful APIs', Icon: TbApi },
     ],
   },
@@ -50,16 +55,15 @@ const skillGroups = [
     label: 'Development Tools',
     skills: [
       { name: 'CI/CD',          Icon: FaCogs },
-      { name: 'Git',            Icon: FaGitAlt },
       { name: 'GitHub Actions', Icon: SiGithubactions },
-      { name: 'Snowflake',      Icon: SiSnowflake },
-      { name: 'AWS',            Icon: FaAws },
       { name: 'MySQL',          Icon: GrMysql },
+      { name: 'AWS',            Icon: FaAws },
+      { name: 'Kafka',          Icon: SiApachekafka },
+      { name: 'Snowflake',      Icon: SiSnowflake },
       { name: 'PostgreSQL',     Icon: SiPostgresql },
       { name: 'YAML',           Icon: SiYaml },
       { name: 'GCP',            Icon: DiGoogleCloudPlatform },
       { name: 'Docker',         Icon: GrDocker },
-      { name: 'Postman',        Icon: SiPostman },
     ],
   },
 ];

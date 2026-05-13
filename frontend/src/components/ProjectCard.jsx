@@ -1,4 +1,4 @@
-import { FiGithub, FiYoutube } from 'react-icons/fi';
+import { FiGithub, FiYoutube, FiExternalLink } from 'react-icons/fi';
 
 export default function ProjectCard({ project }) {
   return (
@@ -14,6 +14,17 @@ export default function ProjectCard({ project }) {
         <div className="flex items-start justify-between gap-2">
           <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{project.name}</h3>
           <div className="flex items-center gap-2.5 flex-shrink-0 mt-0.5">
+            {project.liveLink && (
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Live demo"
+                className="text-gray-400 hover:text-blue-500 transition-colors"
+              >
+                <FiExternalLink size={15} />
+              </a>
+            )}
             {project.demoLink && (
               <a
                 href={project.demoLink}
