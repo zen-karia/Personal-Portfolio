@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafbfc"/>
+      <stop offset="100%" style="stop-color:#f0f2f5"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#9f67fa"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadowStrong">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect width="800" height="4" fill="url(#purpleGrad)"/>
+
+  <!-- Header -->
+  <text x="40" y="52" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="36" font-weight="800" fill="#1a1a2e">CodeRev</text>
+  <rect x="40" y="58" width="160" height="3" rx="1.5" fill="url(#purpleGrad)"/>
+  <text x="40" y="78" font-family="sans-serif" font-size="12" fill="#6b7280" letter-spacing="1">VS CODE EXTENSION  ·  AI CODE REVIEW  ·  RAG</text>
+
+  <!-- Main card: left diff -->
+  <rect x="30" y="98" width="360" height="300" rx="12" fill="white" filter="url(#shadowStrong)"/>
+  <!-- Card header -->
+  <rect x="30" y="98" width="360" height="40" rx="12" fill="#1e1e1e"/>
+  <rect x="30" y="122" width="360" height="16" fill="#1e1e1e"/>
+  <!-- Traffic lights -->
+  <circle cx="52" cy="118" r="5" fill="#ff5f57"/>
+  <circle cx="68" cy="118" r="5" fill="#febc2e"/>
+  <circle cx="84" cy="118" r="5" fill="#28c840"/>
+  <text x="220" y="123" font-family="monospace" font-size="11" fill="#858585" text-anchor="middle">pull_request #47 — diff</text>
+
+  <!-- Diff lines -->
+  <g font-family="'Consolas', 'Courier New', monospace" font-size="11.5">
+    <text x="46" y="158" fill="#6e7681">@@ -12,6 +12,8 @@</text>
+
+    <rect x="30" y="163" width="360" height="17" fill="#ffebe9"/>
+    <text x="46" y="175" fill="#cf222e">- async function reviewPR(diff: string) {</text>
+
+    <rect x="30" y="180" width="360" height="17" fill="#e6ffec"/>
+    <text x="46" y="192" fill="#116329">+ async function reviewPR(diff: string, ctx) {</text>
+
+    <rect x="30" y="197" width="360" height="17" fill="#e6ffec"/>
+    <text x="46" y="209" fill="#116329">+   const embed = await getEmbedding(diff);</text>
+
+    <text x="46" y="226" fill="#24292f">    const chunks = chunkCode(diff);</text>
+    <text x="46" y="243" fill="#24292f">    const review = await gpt4o(diff, ctx);</text>
+    <text x="46" y="260" fill="#24292f">    return review;</text>
+    <text x="46" y="277" fill="#24292f">{'}'}</text>
+
+    <!-- File badge -->
+    <rect x="40" y="288" width="120" height="20" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+    <text x="100" y="302" font-family="sans-serif" font-size="9" fill="#57606a" text-anchor="middle">📄 reviewer.ts</text>
+
+    <rect x="170" y="288" width="100" height="20" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+    <text x="220" y="302" font-family="sans-serif" font-size="9" fill="#57606a" text-anchor="middle">📄 indexer.py</text>
+
+    <rect x="280" y="288" width="96" height="20" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+    <text x="328" y="302" font-family="sans-serif" font-size="9" fill="#57606a" text-anchor="middle">📄 rag.ts</text>
+  </g>
+
+  <!-- RAG label -->
+  <rect x="40" y="320" width="340" height="68" rx="8" fill="#f8f4ff" stroke="#d8b4fe" stroke-width="1"/>
+  <text x="56" y="337" font-family="sans-serif" font-size="11" fill="#7c3aed" font-weight="600">📦 RAG Context Retrieved</text>
+  <text x="56" y="353" font-family="sans-serif" font-size="10" fill="#6b7280">ChromaDB · text-embedding-3-small</text>
+  <text x="56" y="368" font-family="sans-serif" font-size="10" fill="#6b7280">3 relevant chunks from your codebase</text>
+  <text x="56" y="381" font-family="monospace" font-size="9" fill="#9f67fa">indexer.py:42  rag.ts:18  api.py:91</text>
+
+  <!-- Arrow between panels -->
+  <g transform="translate(398, 225)">
+    <circle r="16" fill="url(#purpleGrad)" filter="url(#shadow)"/>
+    <text font-family="sans-serif" font-size="14" fill="white" text-anchor="middle" dy="5">→</text>
+  </g>
+
+  <!-- Main card: right review -->
+  <rect x="414" y="98" width="356" height="300" rx="12" fill="white" filter="url(#shadowStrong)"/>
+  <!-- Card header -->
+  <rect x="414" y="98" width="356" height="40" rx="12" fill="url(#purpleGrad)"/>
+  <rect x="414" y="122" width="356" height="16" fill="#7c3aed"/>
+  <text x="592" y="123" font-family="'Inter', sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="600">✦ AI Review — GPT-4o</text>
+
+  <!-- Review items -->
+  <!-- Issue -->
+  <rect x="428" y="152" width="328" height="64" rx="8" fill="#fff8f8" stroke="#fca5a5" stroke-width="1.5"/>
+  <rect x="428" y="152" width="4" height="64" rx="2" fill="#ef4444"/>
+  <text x="444" y="170" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#dc2626">⚠ Potential Issue · Line 12</text>
+  <text x="444" y="186" font-family="sans-serif" font-size="10.5" fill="#6b7280">No error handling around</text>
+  <text x="444" y="200" font-family="Consolas, monospace" font-size="10" fill="#7c3aed">gpt4o()</text>
+  <text x="487" y="200" font-family="sans-serif" font-size="10.5" fill="#6b7280">— wrap in try/catch.</text>
+
+  <!-- Good -->
+  <rect x="428" y="228" width="328" height="64" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <rect x="428" y="228" width="4" height="64" rx="2" fill="#22c55e"/>
+  <text x="444" y="246" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#16a34a">✓ Good Change · Line 3</text>
+  <text x="444" y="262" font-family="sans-serif" font-size="10.5" fill="#6b7280">Adding</text>
+  <text x="480" y="262" font-family="Consolas, monospace" font-size="10" fill="#7c3aed">ctx</text>
+  <text x="500" y="262" font-family="sans-serif" font-size="10.5" fill="#6b7280">param aligns with RAG pattern</text>
+  <text x="444" y="278" font-family="sans-serif" font-size="10.5" fill="#6b7280">used in indexer.py. Consistent.</text>
+
+  <!-- Suggestion -->
+  <rect x="428" y="304" width="328" height="52" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+  <rect x="428" y="304" width="4" height="52" rx="2" fill="#f59e0b"/>
+  <text x="444" y="322" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#d97706">💡 Suggestion · Line 5</text>
+  <text x="444" y="338" font-family="sans-serif" font-size="10.5" fill="#6b7280">Cache embeddings to reduce API token usage.</text>
+  <text x="444" y="352" font-family="sans-serif" font-size="10.5" fill="#6b7280">Repeated diffs incur unnecessary cost.</text>
+
+  <!-- Bottom tech stack -->
+  <g transform="translate(30, 415)">
+    <rect width="84" height="24" rx="12" fill="white" stroke="#d8b4fe" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="42" y="16" font-family="sans-serif" font-size="10" fill="#7c3aed" text-anchor="middle" font-weight="600">TypeScript</text>
+
+    <rect x="96" width="70" height="24" rx="12" fill="white" stroke="#d8b4fe" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="131" y="16" font-family="sans-serif" font-size="10" fill="#7c3aed" text-anchor="middle" font-weight="600">Python</text>
+
+    <rect x="178" width="66" height="24" rx="12" fill="white" stroke="#d8b4fe" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="211" y="16" font-family="sans-serif" font-size="10" fill="#7c3aed" text-anchor="middle" font-weight="600">FastAPI</text>
+
+    <rect x="256" width="84" height="24" rx="12" fill="white" stroke="#93c5fd" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="298" y="16" font-family="sans-serif" font-size="10" fill="#3b82f6" text-anchor="middle" font-weight="600">ChromaDB</text>
+
+    <rect x="352" width="68" height="24" rx="12" fill="white" stroke="#93c5fd" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="386" y="16" font-family="sans-serif" font-size="10" fill="#3b82f6" text-anchor="middle" font-weight="600">GPT-4o</text>
+
+    <rect x="432" width="50" height="24" rx="12" fill="white" stroke="#6ee7b7" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="457" y="16" font-family="sans-serif" font-size="10" fill="#059669" text-anchor="middle" font-weight="600">RAG</text>
+
+    <rect x="494" width="56" height="24" rx="12" fill="white" stroke="#6ee7b7" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="522" y="16" font-family="sans-serif" font-size="10" fill="#059669" text-anchor="middle" font-weight="600">OpenAI</text>
+  </g>
+</svg>
