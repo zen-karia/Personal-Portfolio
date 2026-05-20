@@ -55,6 +55,7 @@ export const projects = [
     name: 'GestureGroove',
     image: '/images/GestureGroove.png',
     link: 'https://github.com/zen-karia/GestureGroove',
+    liveLink: 'https://gesturegroove.vercel.app/',
     description: 'Gesture-controlled Spotify music controller using hand tracking via OpenCV and MediaPipe.',
     techstack: ['Python', 'Django', 'OpenCV', 'React', 'Spotify API'],
     featured: false,
