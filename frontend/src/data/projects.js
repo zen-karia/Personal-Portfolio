@@ -12,6 +12,7 @@ export const projects = [
     name: 'CodeRev',
     image: '/images/CodeRev.svg',
     link: 'https://github.com/zen-karia/CodeRev',
+    liveLink: 'https://marketplace.visualstudio.com/items?itemName=zen-karia.coderev',
     description: 'VS Code extension for AI-powered PR code reviews using RAG. Indexes your codebase with AST-based chunking, stores embeddings in ChromaDB, and sends retrieved context + diff to GPT-4o for grounded, codebase-aware reviews.',
     techstack: ['TypeScript', 'Python', 'FastAPI', 'ChromaDB', 'OpenAI API', 'RAG'],
     featured: true,
