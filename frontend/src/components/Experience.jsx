@@ -5,7 +5,7 @@ const experiences = [
     companyUrl: 'https://www.triptogo.com',
     logo: '/images/triptogo.png',
     role: 'Software Developer Intern',
-    date: 'May 2026 – Aug 2026',
+    date: 'May 2026 – Present',
     bullets: [
       <>Orchestrating backend microservices and <b>GraphQL</b> APIs for a travel planning platform on a <b>Kotlin/Spring Boot</b> stack, working with <b>Kafka</b> event streams, <b>JPA/Hibernate</b> persistence, <b>Flyway</b>-managed SQL schema migrations, and deploying to <b>AWS EKS</b> via automated CI/CD pipelines</>
     ],
