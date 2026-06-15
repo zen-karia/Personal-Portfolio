@@ -4,7 +4,7 @@ export const projects = [
     image: '/images/Triage.svg',
     link: 'https://github.com/zen-karia/Triage',
     liveLink: 'https://triage-orders.netlify.app',
-    description: 'Event-driven, fully async AWS order pipeline sustaining 84 req/s at p99 212ms with 0% error rate. Integrates Amazon Bedrock for LLM-based fraud scoring and achieves 112x Lambda latency reduction via AWS Power Tuning.',
+    description: 'Event-driven AWS order pipeline sustaining 277 req/s at p99 173ms with 99.28% success over 33K+ requests. Integrates Amazon Bedrock for LLM-based fraud scoring, flagging high-risk orders (> 0.7) via Step Functions, and reduces Lambda latency up to 3x via AWS Power Tuning with X-Ray & CloudWatch observability.',
     techstack: ['TypeScript', 'Next.js', 'AWS CDK', 'SQS', 'EventBridge', 'DynamoDB', 'GitHub Actions'],
     featured: true,
   },
