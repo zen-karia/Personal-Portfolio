@@ -1,9 +1,9 @@
-import { SiHtml5, SiCss3, SiPython, SiYaml, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiExpress, SiFlask, SiTensorflow, SiKeras, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiKotlin, SiSpringboot, SiGraphql, SiApachekafka } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiPython, SiYaml, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiFlask, SiFastapi, SiTensorflow, SiKeras, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiKotlin, SiSpringboot, SiGraphql, SiApachekafka } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiJava } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaGolang, FaNodeJs } from 'react-icons/fa6';
 import { FaReact, FaAws, FaCogs, FaMicrophone } from 'react-icons/fa';
-import { TbBrandCpp, TbLetterC, TbApi, TbBrandReactNative, TbSql } from 'react-icons/tb';
+import { TbBrandCpp, TbLetterC, TbBrandReactNative, TbSql, TbVector } from 'react-icons/tb';
 import { GrMysql, GrDocker } from 'react-icons/gr';
 
 const skillGroups = [
@@ -27,16 +27,16 @@ const skillGroups = [
   {
     label: 'Frameworks',
     skills: [
-      { name: 'Spring Boot',  Icon: SiSpringboot },
-      { name: 'Next.js',      Icon: SiNextdotjs },
       { name: 'React',        Icon: FaReact },
-      { name: 'React Native', Icon: TbBrandReactNative },
+      { name: 'Next.js',      Icon: SiNextdotjs },
       { name: 'Node.js',      Icon: FaNodeJs },
-      { name: 'Express.js',   Icon: SiExpress },
+      { name: 'Spring Boot',  Icon: SiSpringboot },
       { name: 'Django',       Icon: SiDjango },
       { name: 'Flask',        Icon: SiFlask },
+      { name: 'React Native', Icon: TbBrandReactNative },
       { name: 'GraphQL',      Icon: SiGraphql },
-      { name: 'RESTful APIs', Icon: TbApi },
+      { name: 'gRPC',         Icon: TbVector },
+      { name: 'FastAPI',      Icon: SiFastapi },
     ],
   },
   {
