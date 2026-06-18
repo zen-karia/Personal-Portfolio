@@ -1,9 +1,9 @@
-import { SiHtml5, SiCss3, SiPython, SiYaml, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiFlask, SiFastapi, SiTensorflow, SiKeras, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiKotlin, SiSpringboot, SiGraphql, SiApachekafka } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiPython, SiYaml, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiFlask, SiFastapi, SiTensorflow, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiKotlin, SiSpringboot, SiGraphql, SiApachekafka, SiOpenai } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiJava } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaGolang, FaNodeJs } from 'react-icons/fa6';
-import { FaReact, FaAws, FaCogs, FaMicrophone } from 'react-icons/fa';
-import { TbBrandCpp, TbLetterC, TbBrandReactNative, TbSql, TbVector } from 'react-icons/tb';
+import { FaReact, FaAws, FaCogs } from 'react-icons/fa';
+import { TbBrandCpp, TbLetterC, TbBrandReactNative, TbSql, TbVector, TbDatabaseSearch, TbDatabase } from 'react-icons/tb';
 import { GrMysql, GrDocker } from 'react-icons/gr';
 
 const skillGroups = [
@@ -40,16 +40,17 @@ const skillGroups = [
     ],
   },
   {
-    label: 'Libraries',
+    label: 'AI/ML',
     skills: [
-      { name: 'OpenCV',       Icon: SiOpencv },
-      { name: 'Mediapipe',    Icon: FaCogs },
-      { name: 'TensorFlow',   Icon: SiTensorflow },
-      { name: 'Keras',        Icon: SiKeras },
-      { name: 'NumPy',        Icon: SiNumpy },
-      { name: 'Pandas',       Icon: SiPandas },
-      { name: 'Scikit-Learn', Icon: SiScikitlearn },
-      { name: 'gTTS',         Icon: FaMicrophone },
+      { name: 'OpenAI Agents SDK', Icon: SiOpenai },
+      { name: 'RAG',               Icon: TbDatabaseSearch },
+      { name: 'Qdrant',            Icon: TbVector },
+      { name: 'ChromaDB',          Icon: TbDatabase },
+      { name: 'TensorFlow',        Icon: SiTensorflow },
+      { name: 'OpenCV',            Icon: SiOpencv },
+      { name: 'Scikit-Learn',      Icon: SiScikitlearn },
+      { name: 'NumPy',             Icon: SiNumpy },
+      { name: 'Pandas',            Icon: SiPandas },
     ],
   },
   {
