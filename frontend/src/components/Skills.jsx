@@ -1,16 +1,17 @@
-import { SiHtml5, SiPython, SiYaml, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiExpress, SiFlask, SiTensorflow, SiKeras, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiKotlin, SiRuby, SiSpringboot, SiGraphql, SiApachekafka } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiPython, SiYaml, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiExpress, SiFlask, SiTensorflow, SiKeras, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiKotlin, SiSpringboot, SiGraphql, SiApachekafka } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiJava } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaGolang, FaNodeJs } from 'react-icons/fa6';
 import { FaReact, FaAws, FaCogs, FaMicrophone } from 'react-icons/fa';
-import { TbBrandCpp, TbApi, TbBrandReactNative, TbSql } from 'react-icons/tb';
+import { TbBrandCpp, TbLetterC, TbApi, TbBrandReactNative, TbSql } from 'react-icons/tb';
 import { GrMysql, GrDocker } from 'react-icons/gr';
 
 const skillGroups = [
   {
     label: 'Languages',
     skills: [
-      { name: 'C/C++',      Icon: TbBrandCpp },
+      { name: 'C',          Icon: TbLetterC },
+      { name: 'C++',        Icon: TbBrandCpp },
       { name: 'Python',     Icon: SiPython },
       { name: 'Java',       Icon: DiJava },
       { name: 'Kotlin',     Icon: SiKotlin },
@@ -18,8 +19,8 @@ const skillGroups = [
       { name: 'TypeScript', Icon: SiTypescript },
       { name: 'Go',         Icon: FaGolang },
       { name: 'SQL',        Icon: TbSql },
-      { name: 'Ruby',       Icon: SiRuby },
-      { name: 'HTML/CSS',   Icon: SiHtml5 },
+      { name: 'HTML5',      Icon: SiHtml5 },
+      { name: 'CSS3',       Icon: SiCss3 },
       { name: 'Bash',       Icon: SiGnubash },
     ],
   },
