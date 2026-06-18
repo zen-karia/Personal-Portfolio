@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiPython, SiYaml, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiFlask, SiFastapi, SiTensorflow, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiKotlin, SiSpringboot, SiGraphql, SiApachekafka, SiOpenai } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiPython, SiDjango, SiOpencv, SiNumpy, SiGnubash, SiTypescript, SiNextdotjs, SiFlask, SiFastapi, SiTensorflow, SiPandas, SiScikitlearn, SiGithubactions, SiSnowflake, SiPostgresql, SiKotlin, SiSpringboot, SiGraphql, SiApachekafka, SiOpenai, SiKubernetes, SiRedis } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiJava } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaGolang, FaNodeJs } from 'react-icons/fa6';
@@ -58,12 +58,13 @@ const skillGroups = [
     skills: [
       { name: 'CI/CD',          Icon: FaCogs },
       { name: 'GitHub Actions', Icon: SiGithubactions },
-      { name: 'MySQL',          Icon: GrMysql },
       { name: 'AWS',            Icon: FaAws },
+      { name: 'Kubernetes',     Icon: SiKubernetes },
       { name: 'Kafka',          Icon: SiApachekafka },
       { name: 'Snowflake',      Icon: SiSnowflake },
+      { name: 'Redis',          Icon: SiRedis },
+      { name: 'MySQL',          Icon: GrMysql },
       { name: 'PostgreSQL',     Icon: SiPostgresql },
-      { name: 'YAML',           Icon: SiYaml },
       { name: 'GCP',            Icon: DiGoogleCloudPlatform },
       { name: 'Docker',         Icon: GrDocker },
     ],
