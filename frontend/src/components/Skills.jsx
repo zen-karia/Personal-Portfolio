@@ -3,7 +3,7 @@ import { DiGoogleCloudPlatform, DiJava } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaGolang, FaNodeJs } from 'react-icons/fa6';
 import { FaReact, FaAws, FaCogs } from 'react-icons/fa';
-import { TbBrandCpp, TbLetterC, TbBrandReactNative, TbSql, TbVector, TbDatabaseSearch } from 'react-icons/tb';
+import { TbBrandCpp, TbLetterC, TbBrandReactNative, TbSql, TbVector, TbDatabaseSearch, TbDatabase } from 'react-icons/tb';
 import { GrMysql, GrDocker } from 'react-icons/gr';
 
 const skillGroups = [
@@ -63,6 +63,8 @@ const skillGroups = [
       { name: 'Redis',          Icon: SiRedis },
       { name: 'MySQL',          Icon: GrMysql },
       { name: 'PostgreSQL',     Icon: SiPostgresql },
+      { name: 'Qdrant',         Icon: TbVector },
+      { name: 'ChromaDB',       Icon: TbDatabase },
       { name: 'GCP',            Icon: DiGoogleCloudPlatform },
       { name: 'Docker',         Icon: GrDocker },
     ],
