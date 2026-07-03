@@ -8,7 +8,8 @@ const experiences = [
     date: 'May 2026 – Present',
     bullets: [
       <>Decoupled a <b>Kafka</b> audit consumer from a <b>Kotlin/Spring Boot</b> monolith into a standalone microservice persisting up to ~<b>2.7K audit events</b> daily with <b>zero event loss</b>, verified via dual-write reconciliation to <b>MariaDB</b></>,
-      <>Spearheaded a customer-facing <b>GraphQL</b> mutation for self-cancelling hotel bookings with <b>idempotent retries</b> and per-item partial-success, enforcing order-ownership authorization and fail-closed policy pre-checks</>
+      <>Spearheaded a customer-facing <b>GraphQL</b> mutation for self-cancelling hotel bookings with <b>idempotent retries</b> and per-item partial-success, enforcing order-ownership authorization and fail-closed policy pre-checks</>,
+      <>Eliminated a <b>silent data-loss</b> bug dropping user-selected destinations from LLM-generated itineraries, surfacing <b>100%</b> of failures by reordering validation to fail-closed before any <b>Redis-backed</b> write</>
     ],
   },
   {
