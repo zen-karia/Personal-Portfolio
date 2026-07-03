@@ -9,7 +9,8 @@ const experiences = [
     bullets: [
       <>Decoupled a <b>Kafka</b> audit consumer from a <b>Kotlin/Spring Boot</b> monolith into a standalone microservice persisting up to ~<b>2.7K audit events</b> daily with <b>zero event loss</b>, verified via dual-write reconciliation to <b>MariaDB</b></>,
       <>Spearheaded a customer-facing <b>GraphQL</b> mutation for self-cancelling hotel bookings with <b>idempotent retries</b> and per-item partial-success, enforcing order-ownership authorization and fail-closed policy pre-checks</>,
-      <>Eliminated a <b>silent data-loss</b> bug dropping user-selected destinations from LLM-generated itineraries, surfacing <b>100%</b> of failures by reordering validation to fail-closed before any <b>Redis-backed</b> write</>
+      <>Eliminated a <b>silent data-loss</b> bug dropping user-selected destinations from LLM-generated itineraries, surfacing <b>100%</b> of failures by reordering validation to fail-closed before any <b>Redis-backed</b> write</>,
+      <>Shipped an operator-only <b>GraphQL</b> mutation purging orphaned embeddings from a shared <b>Qdrant store</b> via a single type-scoped faceted aggregation, replacing a full-collection scan with <b>zero collateral deletion</b></>
     ],
   },
   {
