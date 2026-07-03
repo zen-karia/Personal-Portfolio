@@ -7,6 +7,7 @@ const experiences = [
     role: 'Software Developer Intern',
     date: 'May 2026 – Present',
     bullets: [
+      <>Decoupled a <b>Kafka</b> audit consumer from a <b>Kotlin/Spring Boot</b> monolith into a standalone microservice persisting up to ~<b>2.7K audit events</b> daily with <b>zero event loss</b>, verified via dual-write reconciliation to <b>MariaDB</b></>
     ],
   },
   {
