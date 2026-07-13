@@ -34,14 +34,6 @@ export const projects = [
     featured: true,
   },
   {
-    name: 'RAIInet',
-    image: '/images/RAIInet.svg',
-    link: 'https://github.com/zen-karia/RAIInet',
-    description: 'C++ MVC strategy game with text and GUI rendering via Observer pattern, 8 polymorphic abilities using Factory Method over ABCs, and RAII smart pointers eliminating 100% of memory leaks across 20+ decoupled classes.',
-    techstack: ['C/C++', 'OOP', 'Linux'],
-    featured: false,
-  },
-  {
     name: 'Structify',
     image: '/images/Structify.jpeg',
     link: 'https://github.com/zen-karia/Structify',
@@ -57,6 +49,14 @@ export const projects = [
     link: 'https://github.com/zen-karia/SkillScan',
     description: 'AI-powered platform for resume enhancement and mock interview practice using GPT-4 and speech analysis.',
     techstack: ['React', 'Node.js', 'Express.js', 'GCP', 'OpenAI API'],
+    featured: false,
+  },
+  {
+    name: 'RAIInet',
+    image: '/images/RAIInet.svg',
+    link: 'https://github.com/zen-karia/RAIInet',
+    description: 'C++ MVC strategy game with text and GUI rendering via Observer pattern, 8 polymorphic abilities using Factory Method over ABCs, and RAII smart pointers eliminating 100% of memory leaks across 20+ decoupled classes.',
+    techstack: ['C/C++', 'OOP', 'Linux'],
     featured: false,
   },
   {
