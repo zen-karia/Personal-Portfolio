@@ -26,6 +26,11 @@ export const projects = [
     featured: true,
   },
   {
+    name: 'Proxima',
+    image: '/images/Proxima.svg',
+    link: 'https://github.com/zen-karia/Proxima',
+  },
+  {
     name: 'RAIInet',
     image: '/images/RAIInet.svg',
     link: 'https://github.com/zen-karia/RAIInet',
