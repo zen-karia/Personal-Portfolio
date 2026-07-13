@@ -39,7 +39,7 @@ export const projects = [
     link: 'https://github.com/zen-karia/RAIInet',
     description: 'C++ MVC strategy game with text and GUI rendering via Observer pattern, 8 polymorphic abilities using Factory Method over ABCs, and RAII smart pointers eliminating 100% of memory leaks across 20+ decoupled classes.',
     techstack: ['C/C++', 'OOP', 'Linux'],
-    featured: true,
+    featured: false,
   },
   {
     name: 'Structify',
