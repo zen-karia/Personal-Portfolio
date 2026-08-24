@@ -1,7 +1,7 @@
 
 const experiences = [
   {
-    company: 'Voyada AI (Formerly TripToGo)',
+    company: 'Voyada AI',
     companyUrl: 'https://www.triptogo.com',
     logo: '/images/VoyadaAI.png',
     role: 'Software Developer Intern',
