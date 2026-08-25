@@ -8,7 +8,7 @@ export default function About() {
         <p>
           I'm a Computer Science student at the University of Waterloo passionate about
           building software that solves real problems. My experience spans production backend
-          systems, AI-powered applications, and embedded hardware projects. At eSentire I worked
+          systems, AI-powered applications, and agentic AI projects. At eSentire I worked
           on refactoring threat-detection pipelines in Go and optimizing cloud deployments on AWS.
         </p>
         <p>
