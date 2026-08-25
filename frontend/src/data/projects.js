@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'Janus',
+    image: '/images/Janus.png',
+    link: 'https://github.com/aarontran321/Build-With-Gemma',
+  },
+  {
     name: 'Triage',
     image: '/images/Triage.svg',
     link: 'https://github.com/zen-karia/Triage',
