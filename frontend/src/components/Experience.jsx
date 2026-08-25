@@ -5,7 +5,7 @@ const experiences = [
     companyUrl: 'https://www.triptogo.com',
     logo: '/images/VoyadaAI.png',
     role: 'Software Developer Intern',
-    date: 'May 2026 – Present',
+    date: 'May 2026 – Aug 2026',
     bullets: [
       <>Spearheaded an <b>autonomous two-agent</b> Python test pipeline, a coding agent writing specs from PR diffs and a CDP/Chromium agent driving live authenticated e2e checkouts, verifying <b>100%</b> of change points at <b>&lt;$0.45/run</b></>,
       <>Cut LLM inference cost by <b>50%</b> on a chat-quality scoring pipeline by re-architecting <b>N synchronous</b> per-conversation calls into a two-phase async batch submit/collect flow, <b>idempotent</b> over a <b>24h</b> window</>,
