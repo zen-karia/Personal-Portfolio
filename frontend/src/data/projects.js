@@ -27,20 +27,20 @@ export const projects = [
     featured: true,
   },
   {
-    name: 'LLM API Rate Limiter',
-    image: '/images/LLM API Rate Limiter Architecture.png',
-    link: 'https://github.com/zen-karia/llmApiRateLimiter',
-    description: 'Distributed rate limiter for LLM API traffic (OpenAI, Anthropic, Bedrock) achieving 3K req/s at p99 1.09ms and 11.3K ops/s throughput. Supports token bucket & sliding window algorithms with Redis + in-memory LRU fallback and dual gRPC/HTTP interfaces.',
-    techstack: ['Go', 'gRPC', 'Redis', 'Prometheus', 'Docker', 'Protocol Buffers'],
-    featured: true,
-  },
-  {
     name: 'Proxima',
     image: '/images/Proxima.svg',
     link: 'https://github.com/zen-karia/Proxima',
     description: 'In-memory vector database in C++17 for low-latency embedding search, serving top-K nearest-neighbor queries over high-dimensional vectors via a TCP text protocol. Hand-tuned ARM NEON SIMD distance kernels run 3.2x faster than scalar (top-10 over 10K vectors in ~107µs), with cosine/L2 similarity, thread-safe reads via shared_mutex, and crash recovery through an append-only persistence log.',
     techstack: ['C/C++', 'SIMD', 'CMake', 'GoogleTest', 'TCP Sockets'],
     featured: true,
+  },
+  {
+    name: 'LLM API Rate Limiter',
+    image: '/images/LLM API Rate Limiter Architecture.png',
+    link: 'https://github.com/zen-karia/llmApiRateLimiter',
+    description: 'Distributed rate limiter for LLM API traffic (OpenAI, Anthropic, Bedrock) achieving 3K req/s at p99 1.09ms and 11.3K ops/s throughput. Supports token bucket & sliding window algorithms with Redis + in-memory LRU fallback and dual gRPC/HTTP interfaces.',
+    techstack: ['Go', 'gRPC', 'Redis', 'Prometheus', 'Docker', 'Protocol Buffers'],
+    featured: false,
   },
   {
     name: 'Structify',
