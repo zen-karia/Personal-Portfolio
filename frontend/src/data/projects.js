@@ -3,6 +3,7 @@ export const projects = [
     name: 'Janus',
     image: '/images/Janus.png',
     link: 'https://github.com/aarontran321/Build-With-Gemma',
+    demoLink: 'https://youtu.be/wkapsjGOQJw',
   },
   {
     name: 'Triage',
