@@ -1,10 +1,11 @@
 export const projects = [
   {
     name: 'Janus',
+    award: '🥉 3rd Place',
     image: '/images/Janus.png',
     link: 'https://github.com/zen-karia/Build-With-Gemma',
     demoLink: 'https://youtu.be/wkapsjGOQJw',
-    description: 'Edge-AI fault arbiter for spacecraft descent that cross-checks a gyroscope against camera-derived rotation and wakes a local Gemma model (via Ollama) only on sensor conflict to diagnose faults and recommend safe actions. A deterministic guardrail validates every proposal against five safety invariants before any thruster command executes, delivering ~2.5s on-device verdicts with auto-generated PDF incident reports.',
+    description: '3rd place at the Google DeepMind Hackathon. Edge-AI fault arbiter for spacecraft descent that cross-checks a gyroscope against camera-derived rotation and wakes a local Gemma model (via Ollama) only on sensor conflict to diagnose faults and recommend safe actions. A deterministic guardrail validates every proposal against five safety invariants before any thruster command executes, delivering ~2.5s on-device verdicts with auto-generated PDF incident reports.',
     techstack: ['Python', 'FastAPI', 'Gemma', 'Ollama', 'WebSockets', 'Chart.js'],
     featured: true,
   },
