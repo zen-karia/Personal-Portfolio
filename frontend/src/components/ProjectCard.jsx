@@ -12,7 +12,14 @@ export default function ProjectCard({ project }) {
       </div>
       <div className="p-4 flex-1 flex flex-col">
         <div className="flex items-start justify-between gap-2">
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{project.name}</h3>
+          <div className="flex items-center gap-2 flex-wrap min-w-0">
+            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{project.name}</h3>
+            {project.award && (
+              <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-900/60">
+                {project.award}
+              </span>
+            )}
+          </div>
           <div className="flex items-center gap-2.5 flex-shrink-0 mt-0.5">
             {project.liveLink && (
               <a
