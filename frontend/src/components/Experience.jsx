@@ -7,7 +7,7 @@ const experiences = [
     role: 'Software Developer Intern',
     date: 'May 2026 – Aug 2026',
     bullets: [
-      <>Spearheaded an <b>autonomous two-agent</b> Python test pipeline, a coding agent writing specs from PR diffs and a CDP/Chromium agent driving live authenticated e2e checkouts, verifying <b>100%</b> of change points at <b>&lt;$0.45/run</b></>,
+      <>Spearheaded an <b>autonomous two-agent</b> Python pipeline writing specs from PR diffs and driving authenticated checkouts, <b>re-platforming</b> from DOM selectors to vision-based computer use on Playwright for <b>12.9x lower cost</b></>,
       <>Cut LLM inference cost by <b>50%</b> on a chat-quality scoring pipeline by re-architecting <b>N synchronous</b> per-conversation calls into a two-phase async batch submit/collect flow, <b>idempotent</b> over a <b>24h</b> window</>,
       <>Decoupled a <b>Kafka</b> audit consumer from a <b>Kotlin/Spring Boot</b> monolith into a standalone microservice persisting audit events with <b>zero event loss</b>, verified via dual-write reconciliation to <b>MariaDB</b> &amp; deployed to <b>AWS EKS</b></>,
       <>Shipped a customer-facing <b>GraphQL</b> mutation for self-cancelling hotel bookings with <b>idempotent retries</b> and per-item partial-success, enforcing order-ownership authorization and fail-closed policy pre-checks</>
