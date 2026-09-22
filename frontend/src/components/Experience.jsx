@@ -3,6 +3,7 @@ const experiences = [
   {
     company: 'Cresta',
     companyUrl: 'https://cresta.com',
+    logo: '/images/Cresta.jpeg',
     bullets: [],
   },
   {
