@@ -1,6 +1,10 @@
 
 const experiences = [
   {
+    company: 'Cresta',
+    bullets: [],
+  },
+  {
     company: 'Voyada AI',
     companyUrl: 'https://www.triptogo.com',
     logo: '/images/VoyadaAI.png',
