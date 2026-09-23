@@ -8,7 +8,7 @@ const experiences = [
     date: 'Jan 2027 – Apr 2027',
     location: 'Toronto, ON',
     bullets: [
-      'Incoming on the Opera Team, building the AI orchestration layer powering Cresta’s contact center platform',
+      <>Incoming on the <b>Opera Team</b>, building the <b>AI orchestration layer</b> powering Cresta’s <b>contact center</b> platform</>,
     ],
   },
   {
