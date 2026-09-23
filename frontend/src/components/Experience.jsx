@@ -5,6 +5,7 @@ const experiences = [
     companyUrl: 'https://cresta.com',
     logo: '/images/Cresta.jpeg',
     role: 'Software Engineer Intern',
+    date: 'Jan 2027 – Apr 2027',
     bullets: [],
   },
   {
