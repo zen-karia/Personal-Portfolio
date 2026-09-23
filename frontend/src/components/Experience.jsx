@@ -7,7 +7,9 @@ const experiences = [
     role: 'Software Engineer Intern',
     date: 'Jan 2027 – Apr 2027',
     location: 'Toronto, ON',
-    bullets: [],
+    bullets: [
+      'Incoming on the Opera Team, building the AI orchestration layer powering Cresta’s contact center platform',
+    ],
   },
   {
     company: 'Voyada AI',
