@@ -6,7 +6,6 @@ const experiences = [
     logo: '/images/Cresta.jpeg',
     role: 'Software Engineer Intern',
     date: 'Jan 2027 – Apr 2027',
-    location: 'Toronto, ON',
     bullets: [
       <>Incoming on the <b>Opera Team</b>, building the <b>AI orchestration layer</b> powering Cresta’s <b>contact center</b> platform</>,
     ],
