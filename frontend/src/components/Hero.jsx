@@ -22,7 +22,7 @@ export default function Hero() {
 
       <span className="inline-flex items-center gap-1.5 mt-3 text-xs px-2.5 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900/60">
         <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-        Open to Winter/Summer 2027 internships
+        Open to Summer 2027 internships
       </span>
 
       <p className="text-gray-600 dark:text-gray-400 mt-5 text-sm leading-relaxed max-w-lg">
