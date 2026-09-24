@@ -2,7 +2,7 @@
 const experiences = [
   {
     company: 'Cresta',
-    companyUrl: 'https://cresta.com',
+    companyUrl: 'https://cresta.ai',
     logo: '/images/Cresta.jpeg',
     role: 'Software Engineer Intern',
     date: 'Jan 2027 – Apr 2027',
