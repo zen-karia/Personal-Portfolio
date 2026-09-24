@@ -82,10 +82,7 @@ export default function Experience() {
                   </a>
                   <span className="text-sm text-gray-500 dark:text-gray-400"> · {exp.role}</span>
                 </div>
-                <span className="text-xs text-gray-400 dark:text-gray-500 flex-shrink-0">
-                  {exp.date}
-                  {exp.location && ` · ${exp.location}`}
-                </span>
+                <span className="text-xs text-gray-400 dark:text-gray-500 flex-shrink-0">{exp.date}</span>
               </div>
               <ul className="space-y-1.5">
                 {exp.bullets.map((b, i) => (
