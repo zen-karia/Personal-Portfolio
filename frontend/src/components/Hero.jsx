@@ -25,12 +25,6 @@ export default function Hero() {
         Open to Summer 2027 internships
       </span>
 
-      <p className="text-gray-600 dark:text-gray-400 mt-5 text-sm leading-relaxed max-w-lg">
-        CS student at UWaterloo building full-stack applications and AI tools.
-        Previously interned at Voyada AI and eSentire shipping production pipelines. Interested
-        in developer tools, machine learning, and software that makes a real impact.
-      </p>
-
       <div className="flex items-center gap-5 mt-6">
         <a
           href="https://github.com/zen-karia"
